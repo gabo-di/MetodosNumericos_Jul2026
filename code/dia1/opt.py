@@ -76,7 +76,7 @@ sigma = 1.0
 
 # Lennard-Jones potencial - 1D
 def V_1D(r):
-    return 4 * epsilon * (np.power(sigma / r, 12) - np.power(sigma / r, 6))
+    return ???
 
 # grafica del potencial
 r = np.linspace(0.9, 3.0, 100)
@@ -144,7 +144,7 @@ def V(x):
     for i in range(N-1):
         for j in range(i+1, N):
             r_ij = np.linalg.norm(positions[i] - positions[j])
-            V += 4 * epsilon * (np.power(sigma / r_ij, 12) - np.power(sigma / r_ij, 6))
+            V += ???
     return V
 
 
@@ -190,9 +190,7 @@ print("distancia 23: ", np.linalg.norm(r_23))
 print(np.linalg.norm(r_23))
 
 # coseno del angulo entre partículas
-print("coseno del angulo 12-13: ", np.dot(r_12, r_13) / (np.linalg.norm(r_12) * np.linalg.norm(r_13)))
-print("coseno del angulo 13-23: ", np.dot(r_13, r_23) / (np.linalg.norm(r_13) * np.linalg.norm(r_23)))
-print("coseno del angulo 23-12: ", np.dot(r_23, -r_12) / (np.linalg.norm(r_23) * np.linalg.norm(r_12)))
+print("coseno del angulo 12-13: ", ???)
 
 
 
