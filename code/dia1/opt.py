@@ -12,12 +12,50 @@
 
 
 
+# %% [markdown]
+# # El potencial de Lennard-Jones
+#
+# El potencial de Lennard-Jones es uno de los modelos más simples y usados para describir la interacción entre átomos o moléculas neutras. Aunque es una aproximación, captura dos efectos físicos importantes:
+#
+# 1. **Atracción a distancias intermedias:**
+#    Incluso dos átomos neutros pueden atraerse debido a fluctuaciones instantáneas de sus nubes electrónicas. Estas fluctuaciones producen dipolos inducidos, dando lugar a fuerzas de dispersión de London. Esta contribución atractiva decae aproximadamente como
+#
+# $$
+# -\frac{1}{r^6}.
+# $$
+#
+# 2. **Repulsión a distancias cortas:**
+#    Cuando dos átomos se acercan demasiado, sus nubes electrónicas se solapan. Esto produce una repulsión muy fuerte asociada al principio de exclusión de Pauli. En muchos modelos, esta repulsión se aproxima mediante un término muy empinado,
+#
+# $$
+# \frac{1}{r^{12}}.
+# $$
+#
+# Por eso el potencial completo se escribe como
+#
+# $$
+# V(r)=4\epsilon \left[\left(\frac{\sigma}{r}\right)^{12}-\left(\frac{\sigma}{r}\right)^6\right].
+# $$
+#
+# Aquí, ($\epsilon$) controla la profundidad del pozo de energía, y ($\sigma$) es la distancia donde el potencial cambia de signo. El mínimo ocurre en
+#
+# $$
+# r_{\min}=2^{1/6}\sigma,
+# $$
+#
+# y en ese punto
+#
+# $$
+# V(r_{\min})=-\epsilon.
+# $$
+#
+# Este modelo es importante porque aparece como bloque básico en simulaciones moleculares. En sistemas biológicos reales, como proteínas, membranas o complejos proteína-ligando, el potencial total no es solamente Lennard-Jones. También se incluyen enlaces, ángulos, torsiones y fuerzas electrostáticas. Sin embargo, el término de Lennard-Jones sigue siendo una parte esencial de los modelos de campo de fuerza porque representa las interacciones de van der Waals entre átomos no enlazados.
+
+
+
 
 # %% [markdown]
 # ## Lennard-Jones potencial - 1D
-#
-# El Lennard-Jones potencial es un modelo de potencial de
-# interaccion entre atomos o moleculas.
 #
 # $$
 # V(r) = 4 \epsilon \left( \left( \frac{\sigma}{r} \right)^{12} - \left( \frac{\sigma}{r} \right)^{6} \right)
@@ -89,7 +127,7 @@ plt.show()
 
 # %% [markdown]
 # ## Lennard-Jones potencial - 3D x N particulas
-
+#
 # $$
 # V = 4 \epsilon \sum_{i=1}^{N-1} \sum_{j=i+1}^{N} \left( \left( \frac{\sigma}{||r_i - r_j||} \right)^{12} - \left( \frac{\sigma}{||r_i - r_j||} \right)^{6} \right)
 # $$
