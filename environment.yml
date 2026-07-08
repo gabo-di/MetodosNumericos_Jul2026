@@ -1,0 +1,43 @@
+name: numericalMethods_2026
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  # Core Scientific & Data
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - jupyterlab
+  - tqdm
+  - ipython
+  - scikit-learn
+  - sympy
+  # # Optimization & Dynamics
+  # - cvxpy
+  # - rebound
+  # - reboundx
+  # # Bio / Chem / Docking 
+  # - openbabel
+  # - rdkit
+  # - autodock-vina
+  # - meeko
+  # # Interactive 3D Viewing
+  # - py3dmol
+  # - nglview
+  # # Systems Biology & ODEs
+  # - copasi
+  # - basico
+  # # Machine Learning (PyTorch)
+  # - pytorch
+  # - torchvision
+  # - cpuonly  # Change to "pytorch-cuda" if students have dedicated Nvidia GPUs
+  # # Pip-only fallbacks (Packages not stable on Conda)
+  # - pip
+  # - pip:
+  #   - tellurium
+  #   - libroadrunner
+  #   - mealpy
+  #   - pysindy
