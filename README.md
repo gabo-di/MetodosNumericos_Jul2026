@@ -17,7 +17,7 @@ Usar conda + mamba env para instalar las librerias y reproducir el codigo
 
 1. Dia 1: Optimization
 1. Dia 2: Ordinary Differential Equations
-1. Dia 3: Data Driven modelling
+1. Dia 3: Data Driven modeling
 
 
 
