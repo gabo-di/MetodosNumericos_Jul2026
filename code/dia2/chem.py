@@ -45,19 +45,19 @@
 # Entonces:
 #
 # $$
-# \frac{dS}{dt} = -v_1 + v_{-1}
+# \frac{d[S]}{dt} = -v_1 + v_{-1}
 # $$
 #
 # $$
-# \frac{dE}{dt} = -v_1 + v_{-1} + v_{cat}
+# \frac{d[E]}{dt} = -v_1 + v_{-1} + v_{cat}
 # $$
 #
 # $$
-# \frac{dES}{dt} = v_1 - v_{-1} - v_{cat}
+# \frac{d[ES]}{dt} = v_1 - v_{-1} - v_{cat}
 # $$
 #
 # $$
-# \frac{dP}{dt} = v_{cat}
+# \frac{d[P]}{dt} = v_{cat}
 # $$
 
 
