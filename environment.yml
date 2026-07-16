@@ -16,6 +16,8 @@ dependencies:
   - scikit-learn
   - sympy
   - rebound
+  - pytorch
+  - torchdiffeq
 
   # # Optimization & Dynamics
   # - cvxpy
